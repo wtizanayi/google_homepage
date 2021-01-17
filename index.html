@@ -12,44 +12,75 @@
   transform: translate(-50%, -50%);
 }
 
-.form {
-  text-align: center;
-}
-#form-search { 
-  width: 450px;
-  line-height: 32px;
-  padding: 20px 10px;
+.SearchBar {
+     position: absolute;
+     top: 320px;
+     left: 500px;
 }
 
-.form #form-search {
-  padding: 0 8px;
+.SearchBar input {
+     height: 20px;
+     width: 400px;
 }
 
+.Submit {
+  position: absolute;
+  top: 360px;
+  left:600px;
+}
 
+li {
+    display: inline;
+    font-family: arial, sans-serif;
+    font-size: 14px; 
+    margin: 5px;
+    vertical-align: middle;
+}
+li a {
+    text-decoration: none;
+}
 
+li a {
+    color: rgb(68, 68, 70);
+    text-decoration: none; 
+    padding-right: 5px;
+  }
 
+li a:hover {
+     text-decoration: underline;
+  }
 
+  
     </style>
     </head>
-    <ul>
+   <nav class="nav">
+      <ul class="leftalign">
         <li><a href="#about">About</a></li>
         <li><a href="#store">Store</a></li>
-
-        <li style="float:right"><a href="#Sign">Sign in</a></li>
-        <li 
-        <li style="float:right"><a href="#images">Images</a></li>
-        <li style="float:right"><a href="#gmail">Gmail</a></li>
+      </ul>
+      <ul class="rightalign">
+        <li style="float:right"><a href="#Sign"></a> <button class="signin">Sign In</button></li>
+        <li style="float:right"><a href="#images"> Images </a></li>
+        <li style="float:right"><a href="#gmail"> Gmail </a></li>
         
        
       </ul>
+    </nav>
+    
     
         
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
      alt="google logo" class="center">
-    <div class="form">
+
+     <div class="SearchBar">
+      <form>
+      <input type="text" placeholder="Search..." required>
+      
+      </form>
+  </div>
+  <div class= "Submit">
     <form>
-        <label for="form-search"></label>
-    <input type="text" id="search" name="search"><br><br>
+            
     <input type="submit" value="Google Search">
     <input type="submit" value="I'm Feeling Lucky">
 </form>
